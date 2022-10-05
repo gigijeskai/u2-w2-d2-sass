@@ -1,5 +1,5 @@
 body {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
@@ -16,3 +16,15 @@ nav {
     gap: 1em
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+div img{
+    display: none;
+}
+
+.show-image{
+    display: block;
+}
