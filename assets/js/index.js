@@ -5,6 +5,16 @@ function cambiaColore(){
 }
 
 function aggiungiImmagine(){
-    let immagine = document.getElementById('immagine') 
-immagine.innerHTML += `<img src="./assets/image/sample-image.jpg" ></img>`
+let image = document.querySelector('img')
+image.classList.toggle('show-image');
+}
+
+
+
+let immaginiRandomiche;
+immaginiRandomiche = ['https://picsum.photos/200/300','https://picsum.photos/200/300','https://picsum.photos/200/300']
+
+function randomImage(){
+   let randomNumber = Math.floor(Math.random()*immaginiRandomiche.length)
+   document.querySelector('#immagini-random').innerHTML += '<img src="'+randomImage[randomNumber]+'" />'; 
 }
